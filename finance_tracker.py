@@ -46,8 +46,14 @@ def view_expenses(data):
         for category, info in expense.items():
             print(f"Category: {category}\n\t- {info[0]}: ${info[1]:.2f}\n")
 
+def view_summary(data):
+    print("Summary:")
+    for category, amount in data.items():
+        print(f"{category}: ${amount:.2f}")
+
 def exec_finance_tracker():
     expenses = []
+    categories = {}
     while True:
         expense_info = expense_prompt()
         descr = expense_info[0]
@@ -55,7 +61,10 @@ def exec_finance_tracker():
         amount = expense_info[2]
 
         expenses.append({category: (descr, amount)})
+        categories.update({category: categories.get(category) + amount} if (category in categories) else {category: amount})
+
         view_expenses(expenses)
+        view_summary(categories)
 
 def start_program():
     print("Welcome to the personal finance tracker!\n")
