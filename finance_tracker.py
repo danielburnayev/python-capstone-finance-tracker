@@ -10,7 +10,6 @@ class EmptyValueError(ValueError):
 def check_for_empty(given_str):
     return len(given_str) == 0
 
-
 def expense_prompt():
     good_inputs = 0
     
@@ -41,7 +40,11 @@ def expense_prompt():
         else:
             print("Expense added successfully.\n")
             return descr, category, amount
-    
+
+def view_expenses(data):
+    for expense in data:
+        for category, info in expense.items():
+            print(f"Category: {category}\n\t- {info[0]}: ${info[1]:.2f}\n")
 
 def exec_finance_tracker():
     expenses = []
@@ -52,8 +55,7 @@ def exec_finance_tracker():
         amount = expense_info[2]
 
         expenses.append({category: (descr, amount)})
-        print(f"Added the following expense:\n\tCategory: {category}\n\tDescription: {descr}\n\tAmount: {amount}\n")
-
+        view_expenses(expenses)
 
 def start_program():
     print("Welcome to the personal finance tracker!\n")
