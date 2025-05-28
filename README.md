@@ -17,22 +17,22 @@ To run the program, type this in the directory where the finance_tracker.py file
 ## Concepts
 Various different fundamental Python concepts were used:
 - **Input/Output**
--   Requested data with the input() function
--   Gave the user output with the print() function
+  - Requested data with the input() function
+  - Gave the user output with the print() function
 - **Data structures**
--   Tuples
--   Dictionaries
--   Lists
+  - Tuples
+  - Dictionaries
+  - Lists
 - **Exception Handling**
--   Usage of try-except blocks
--   Usage of the raise keyword
--   Creation of custom exceptions
+  - Usage of try-except blocks
+  - Usage of the raise keyword
+  - Creation of custom exceptions
 - **Functions**
--   Created function definitions for repeated lines of code
+  - Created function definitions for repeated lines of code
 - **Loops**
--   For loops
--   While loops
+  - For loops
+  - While loops
 - **Control Flow**
--   If-else statements
--   break/continue keywords
--   Ternary operations
+  - If-else statements
+  - break/continue keywords
+  - Ternary operations
