@@ -15,6 +15,8 @@ Make sure the following are configured onto your system before attempting to run
 To run the program, type this in the directory where the finance_tracker.py file is: <br />
 ``` python3 finance_tracker.py ```
 
+To use the program, give responses to the provided prompts. If your response was initially invalid, it will notify the user of its fault and ask the user again for input. 
+
 ## Concepts
 Various different fundamental Python concepts were used:
 - **Input/Output**
