@@ -1,6 +1,7 @@
 # python-capstone-finance-tracker
 
 This is the **Personal Finance Tracker**, made by **Daniel Burnayev**.
+<img width="673" alt="Screenshot 2025-05-28 at 1 13 48 AM" src="https://github.com/user-attachments/assets/5cc99bc7-0675-458f-b9ab-dc0ae2eb510d" />
 
 ## Description
 A command-line program that keeps track of a user's self-inserted transactions during an individual session.
