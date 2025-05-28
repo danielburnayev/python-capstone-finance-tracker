@@ -11,7 +11,7 @@ Make sure the following are configured onto your system before attempting to run
 - Working terminal or command-line (should be built into your system)
 
 ## Usage
-To run the program, type this in the directory where the finance_tracker.py file is:
+To run the program, type this in the directory where the finance_tracker.py file is: \n
 ``` python3 finance_tracker.py ```
 
 ## Concepts
